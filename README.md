@@ -42,12 +42,15 @@ numpy.T(a, axes=None)
 import numpy as np
  
 a = np.array([[1, 2], [3, 4]])
-a
+""" before transpose
 array([[1, 2],
        [3, 4]])
+"""
 np.transpose(a)
+""" After transpose
 array([[1, 3],
        [2, 4]])
+""" 
 ```
 ## Inverse
 The inverse of a matrix is that matrix which when multiplied with the original matrix will give an identity matrix
@@ -74,10 +77,25 @@ print(np.linalg.inv(A))
 
 ## Operations with vectors 
 ### Sum
-stuff stuff
+`numpy.sum(arr, axis, dtype, out)` This function returns the sum of array elements over the specified axis.
 
+### Implementation Example :
+```python
+# import library
+import numpy as np
+ 
+# declare vectors
+x = [1, 2]
+y = [3, 4]
+ 
+# find cross product of two given vectors
+result = np.cross(x, y)
+ 
+# show the result
+print(result)
+```
 ### Dot
-the dot product or also known as the scalar product is an algebraic operation that takes two equal-length sequences of numbers and returns a single number using the `np.dot()` function
+the dot product also known as the scalar product is an algebraic operation that takes two equal-length sequences of numbers and returns a single number using the `np.dot()` function
 ### Implementation Example :
 ```python
 # Importing numpy module
@@ -91,7 +109,7 @@ b = 7
 print(np.dot(a, b))
 ```
 ### Cross
-the dot product or also known as the scalar product is an algebraic operation that takes two equal-length sequences of numbers and returns a single number using the `numpy.cross()` function
+The cross product of a and b is a vector perpendicular to both a and b. If a and b are arrays of vectors, the vectors are defined by the last axis of a and b by default, and these axes can have dimensions 2 or 3. This is implemented using the `numpy.cross()` function
 ### Implementation Example :
 ```python
 # import library
@@ -111,13 +129,13 @@ print(result)
 
 # References
 
-> https://www.geeksforgeeks.org/how-to-calculate-the-determinant-of-a-matrix-using-numpy/?ref=header_search
+> https://numpy.org/doc/stable/reference/generated/numpy.linalg.det.html#numpy.linalg.det
 > 
 > https://numpy.org/doc/stable/reference/generated/numpy.transpose.html#numpy-transpose
 > 
 > https://numpy.org/doc/stable/reference/generated/numpy.linalg.inv.html
 >
-> sum
+> https://numpy.org/doc/stable/reference/generated/numpy.sum.html
 > 
 > https://numpy.org/doc/stable/reference/generated/numpy.dot.html#numpy.dot
 >

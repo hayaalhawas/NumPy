@@ -79,3 +79,10 @@ print(np.linalg.inv(A))
 
 
 
+# References
+
+> https://www.geeksforgeeks.org/how-to-calculate-the-determinant-of-a-matrix-using-numpy/?ref=header_search
+> 
+> https://www.geeksforgeeks.org/python-numpy-matrix-transpose/?ref=header_search
+> 
+> https://www.geeksforgeeks.org/how-to-inverse-a-matrix-using-numpy/

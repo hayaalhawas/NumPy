@@ -31,9 +31,9 @@ print(int(det))
 This functipn returns an array with axes transposed. For a 1-D array, this returns an unchanged view of the original array, as a transposed vector is simply the same vector. 
 
 ```python
-numpy.transpose(a, axes=None)
+numpy.transpose(a)
 #Other Syntax
-numpy.T(a, axes=None)
+a.T
 ```
 ### Implementation Example :
 

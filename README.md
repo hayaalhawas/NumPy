@@ -1,4 +1,4 @@
-# NumPy 
+# NumPy Functions Summary 
 
 ## Determinant
 
@@ -28,26 +28,26 @@ print("\nDeterminant of given 2X2 matrix:")
 print(int(det)) 
 ```
 ## Transpose
-transpose is a function in the NumPy library that computes the transpose of a matrix. It swaps the rows and columns of the matrix, effectively reflecting it along its main diagonal. 
+This functipn returns an array with axes transposed. For a 1-D array, this returns an unchanged view of the original array, as a transposed vector is simply the same vector. 
 
-The function is called on a NumPy matrix object, and it does not take any parameters. The result is a new matrix representing the transposed version of the original matrix.
 ```python
-numpy.matrix.transpose()
+numpy.transpose(a, axes=None)
+#Other Syntax
+numpy.T(a, axes=None)
 ```
 ### Implementation Example :
-the code uses the NumPy library to create a 2×3 matrix. It then calculates the transpose of the original matrix using the `transpose()` function. Finally, it prints both the original and transposed matrices to the console.
+
+```python
+# Import required package
 import numpy as np
-```python 
-# Original matrix
-original_matrix = np.matrix([[1, 2, 3], [4, 5, 6]])
  
-# Transposed matrix
-transposed_matrix = original_matrix.transpose()
- 
-print("Original Matrix:")
-print(original_matrix)
-print("\nTransposed Matrix:")
-print(transposed_matrix)
+a = np.array([[1, 2], [3, 4]])
+a
+array([[1, 2],
+       [3, 4]])
+np.transpose(a)
+array([[1, 3],
+       [2, 4]])
 ```
 ## Inverse
 The inverse of a matrix is that matrix which when multiplied with the original matrix will give an identity matrix
@@ -74,15 +74,51 @@ print(np.linalg.inv(A))
 
 ## Operations with vectors 
 ### Sum
-### Dot
-### Cross
+stuff stuff
 
+### Dot
+the dot product or also known as the scalar product is an algebraic operation that takes two equal-length sequences of numbers and returns a single number using the `np.dot()` function
+### Implementation Example :
+```python
+# Importing numpy module
+import numpy as np
+ 
+# Taking two scalar values
+a = 5
+b = 7
+ 
+# Calculating dot product using dot()
+print(np.dot(a, b))
+```
+### Cross
+the dot product or also known as the scalar product is an algebraic operation that takes two equal-length sequences of numbers and returns a single number using the `numpy.cross()` function
+### Implementation Example :
+```python
+# import library
+import numpy as np
+ 
+# declare vectors
+x = [1, 2]
+y = [3, 4]
+ 
+# find cross product of two given vectors
+result = np.cross(x, y)
+ 
+# show the result
+print(result)
+```
 
 
 # References
 
 > https://www.geeksforgeeks.org/how-to-calculate-the-determinant-of-a-matrix-using-numpy/?ref=header_search
 > 
-> https://www.geeksforgeeks.org/python-numpy-matrix-transpose/?ref=header_search
+> https://numpy.org/doc/stable/reference/generated/numpy.transpose.html#numpy-transpose
 > 
-> https://www.geeksforgeeks.org/how-to-inverse-a-matrix-using-numpy/
+> https://numpy.org/doc/stable/reference/generated/numpy.linalg.inv.html
+>
+> sum
+> 
+> https://numpy.org/doc/stable/reference/generated/numpy.dot.html#numpy.dot
+>
+> https://numpy.org/doc/stable/reference/generated/numpy.cross.html#numpy.cross

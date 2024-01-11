@@ -128,7 +128,10 @@ print(result)
 
 
 # References
-
+#### NumPy Official Document: 
+>https://numpy.org/doc/
+>
+#### Functions Reference:
 > https://numpy.org/doc/stable/reference/generated/numpy.linalg.det.html#numpy.linalg.det
 > 
 > https://numpy.org/doc/stable/reference/generated/numpy.transpose.html#numpy-transpose

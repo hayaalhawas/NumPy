@@ -143,3 +143,10 @@ print(result)
 > https://numpy.org/doc/stable/reference/generated/numpy.dot.html#numpy.dot
 >
 > https://numpy.org/doc/stable/reference/generated/numpy.cross.html#numpy.cross
+>
+#### NumPy ( np.where ) :
+>
+> https://numpy.org/doc/1.26/reference/generated/numpy.where.html#numpy-whereNumPy
+>
+#### NumPy ( np.fliplr ) : 
+> https://numpy.org/doc/stable/reference/generated/numpy.fliplr.html
